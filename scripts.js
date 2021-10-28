@@ -154,7 +154,7 @@ function games() {
   alert(`
   Fjöldi leikja: ${total}
   Unnir leikir: ${wins} (${(wins/total * 100).toFixed(2)}%)
-  Tapaðir leikir: ${wins} (${(losses/total * 100).toFixed(2)}%)
+  Tapaðir leikir: ${losses} (${(losses/total * 100).toFixed(2)}%)
   `)
   }
   else alert('Þú hefur spilað núll leiki')
