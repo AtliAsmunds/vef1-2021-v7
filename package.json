@@ -2,12 +2,15 @@
   "name": "vef1-2021-v7",
   "version": "1.0.0",
   "scripts": {
-    "dev": "browser-sync start --server --files scripts.js index.html"
+    "dev": "browser-sync start --server --files scripts.js index.html",
+    "build": "cpy ./*.html ./*.js build/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.5"
+    "browser-sync": "^2.27.5",
+    "concurrently": "^6.3.0",
+    "cpy-cli": "^3.1.1"
   }
 }
