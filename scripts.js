@@ -150,11 +150,14 @@ function play() {
  */
 function games() {
   let total = wins + losses;
+  if (total > 0) {
   alert(`
   Fjöldi leikja: ${total}
   Unnir leikir: ${wins} (${(wins/total * 100).toFixed(2)}%)
   Tapaðir leikir: ${wins} (${(losses/total * 100).toFixed(2)}%)
   `)
+  }
+  else alert('Þú hefur spilað núll leiki')
 }
 
 // Hér getum við ekki skrifað test þar sem fallið les úr global state
